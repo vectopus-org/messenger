@@ -1,0 +1,22 @@
+{
+  "name": "messenger",
+  "version": "0.1.0",
+  "bin": {
+    "messenger": "bin/messenger.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "echo \"Call 'npm run deploy' or use ./deploy.sh directly\" && exit 0",
+    "deploy": "source .env && ./deploy.sh",
+    "test": "npx jest __tests__/index.test.js",
+    "test:local": "node ./local-test.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sns": "^3.804.0",
+    "aws-cdk-lib": "2.155.0",
+    "constructs": "^10.0.0"
+  }
+}
